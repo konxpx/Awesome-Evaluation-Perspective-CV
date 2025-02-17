@@ -87,6 +87,233 @@ Proxy Task - Defining the Scope of Evaluation
 
 
 
+## Content
+- [Data Environment](#data-environment)
+
+- [Evaluation System](#evaluation-system)
+
+- [Summary and Outlook](#summary-and-outlook)
+
+
+
+
+#### `Data Environment`
+
+##### `Classical Small-scale Datasets`
+
+* [**IEEE'1998**] **"Gradient-based learning applied to document recognition"**, Y. LeCun, L. Bottou, Y. Bengio, and P. Haffner.[[`paper`]](https://ieeexplore.ieee.org/document/726791)
+
+* [**TR'2009**] **"Learning multiple layers of features from tiny images"**, A Krizhevsky，G. Hinton. [[`paper`]](https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf) [[`Dataset`🌟]](https://www.cs.toronto.edu/~kriz/cifar.html)
+
+* [**CVPR'2004**] **"Learning generative visual models from few training examples: An incremental bayesian approach tested on 101 object categories**", L. Fei-Fei, R. Fergus, and P. Perona.[[`paper`]](https://www.sciencedirect.com/science/article/abs/pii/S1077314206001688?via%3Dihub) [[`Dataset`🌟]](https://data.caltech.edu/records/mzrjq-6wc02)
+
+* [**TR'2007**] **"Caltech-256 object category dataset"***, G. Griffin, A. Holub, P. Perona et al. [[`Dataset`🌟]](https://data.caltech.edu/records/nyy15-4j048)
+
+* [**TPAMI'2015**] **"Object tracking benchmark"**, Y. Wu, J. Lim, and M.-H. Yang. [[`paper`]](https://ieeexplore.ieee.org/document/7001050) [[`Dataset`🌟]](http://cvlab.hanyang.ac.kr/tracker_benchmark/datasets.html)
+
+* [**CVPR'2013**] **"Online object tracking: A benchmark"**, Y. Wu, J. Lim, and M.-H. Yang. [[`paper`]](https://ieeexplore.ieee.org/document/6619156) [[`Dataset`🌟]](http://cvlab.hanyang.ac.kr/tracker_benchmark/datasets.html)
+
+* [**TR'2009**] **"Learning multiple layers of features from tiny images"**, A Krizhevsky，G. Hinton. [[`paper`]](https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf) [[`Dataset`🌟]](https://www.cs.toronto.edu/~kriz/cifar.html)
+
+##### `Challenge and Competition Datasets`
+
+* [**IJCV'2015**] **"The pascal visual object classes challenge: A retrospective"**, M. Everingham, S. A. Eslami, L. Van Gool, C. K. Williams, J. Winn, and A. Zisserman. [[`paper`]](https://link.springer.com/article/10.1007/s11263-014-0733-5) [[`Dataset`🌟]](http://host.robots.ox.ac.uk/pascal/VOC/)
+
+* [**CVPR'2014**] **"The role of context for object detection and semantic segmentation in the wild"**, R. Mottaghi, X. Chen, X. Liu, N.-G. Cho, S.-W. Lee, S. Fidler, R. Urtasun, and A. Yuille. [[`paper`]](https://ieeexplore.ieee.org/document/6909514) [[`Dataset`🌟]](https://cs.stanford.edu/~roozbeh/pascal-context/)
+
+* [**IJCV'2015**] **"Imagenet large scale visual recognition challenge"**, O. Russakovsky, J. Deng, H. Su, J. Krause, S. Satheesh, S. Ma, Z. Huang, A. Karpathy, A. Khosla, M. Bernstein et al. [[`paper`]](https://arxiv.org/pdf/1409.0575) [[`Dataset`🌟]](https://www.image-net.org/challenges/LSVRC/)
+
+* [**ICCV'2013**] **"The visual object tracking vot2013 challenge results"**, M. Kristan, R. Pflugfelder, A. Leonardis, J. Matas, F. Porikli, L. Cehovin, G. Nebehay, G. Fernandez, T. Vojir, A. Gatt, A. Khajenezhad, A. Salahledin et al. [[`paper`]](https://ieeexplore.ieee.org/document/6755885) [[`Dataset`🌟]](https://votchallenge.net/vot2013/dataset.html)
+
+* [**ECCV'2014**] **"The visual object tracking vot2014 challenge results"**, M. Kristan, R. P. Pflugfelder, A. Leonardis, J. Matas, L. Cehovin, G. Nebehay, T. Voj ́ır, G. Fern ́andez, A. Lukezic, A. Dimitriev, A. Petrosino, A. Saffari, B. Li, B. Han, C. Heng, C. Garcia et al. [[`paper`]](https://votchallenge.net/vot2014/download/visual-object-tracking.pdf) [[`Dataset`🌟]](https://votchallenge.net/vot2014/dataset.html)
+
+* [**ICCV'2015**] **"The visual object tracking vot2015 challenge results"**, M. Kristan, J. Matas, A. Leonardis, M. Felsberg, L. Cehovin, G. Fernandez, T. Vojir, G. Hager, G. Nebehay, R. Pflugfelder, A. Gupta, A. Bibi, A. Lukezic, A. Garcia-Martin, A. Saffari, A. Petrosino, and A. Solis Montero. [[`paper`]]https://ieeexplore.ieee.org/document/7406428) [[`Dataset`🌟]](https://votchallenge.net/vot2015/dataset.html)
+
+* [**ECCV'2016**] **"The visual object tracking vot2016 challenge results"**, M. Kristan, A. Leonardis, J. Matas, M. Felsberg, R. Pflugfelder, L. ˇCehovin, T. Vojı ́ ̃r, G. H ̈ager, A. Lukeˇzicˇ, G. Fern ́andez et al. [[`paper`]](https://data.votchallenge.net/vot2016/presentations/vot_2016_paper.pdf) [[`Dataset`🌟]](https://votchallenge.net/vot2016/dataset.html)
+
+* [**ICCV'2017**] **"The visual object tracking vot2017 challenge results"**, M. Kristan, A. Leonardis, J. Matas, M. Felsberg, R. Pflugfelder, L. C. Zajc, T. Vojı ́r, G. Ha ̈ger, A. Lukeˇzic, A. Eldesokey et al. [[`paper`]](https://ieeexplore.ieee.org/document/8265440) [[`Dataset`🌟]](https://votchallenge.net/vot2017/dataset.html)
+
+* [**ECCV'2018**] **"The sixth visual object tracking vot2018 challenge results"**, M. Kristan, A. Leonardis, J. Matas, M. Felsberg, R. Pflugfelder, L. ˇCehovin Zajc, T. Vojir, G. Bhat, A. Lukezic, A. Eldesokey et al. [[`paper`]](https://data.votchallenge.net/vot2018/presentations/vot2018_presentation.pdf) [[`Dataset`🌟]](https://votchallenge.net/vot2018/dataset.html)
+
+* [**ICCV'2019**] **"The seventh visual object tracking vot2019 challenge results"**, M. Kristan, J. Matas, A. Leonardis, M. Felsberg, R. Pflugfelder, J.K. Kamarainen, L. ˇCehovin Zajc, O. Drbohlav, A. Lukezic, A. Berg et al. [[`paper`]](https://ieeexplore.ieee.org/document/9022051) [[`Dataset`🌟]](https://votchallenge.net/vot2019/dataset.html)
+
+* [**ECCV'2020**] **"The eighth visual object tracking vot2020 challenge results"**, M. Kristan, A. Leonardis, J. Matas, M. Felsberg, R. Pflugfelder, J.K. K ̈am ̈ar ̈ainen, M. Danelljan, L. ˇC. Zajc, A. Lukezˇiˇc, O. Drbohlav et al. [[`paper`]](https://link.springer.com/chapter/10.1007/978-3-030-68238-5_39) [[`Dataset`🌟]](https://votchallenge.net/vot2020/dataset.html)
+
+* [**ICCV'2021**] **"The ninth visual object tracking vot2021 challenge results"**, M. Kristan, J. Matas, A. Leonardis, M. Felsberg, R. Pflugfelder, J.K. K ̈am ̈ar ̈ainen, H. J. Chang, M. Danelljan, L. Cehovin, A. Lukezˇiˇc et al. [[`paper`]](https://ieeexplore.ieee.org/document/9607833) [[`Dataset`🌟]](https://votchallenge.net/vot2021/dataset.html)
+
+* [**ECCV'2022**] **"The tenth visual object tracking vot2022 challenge results"**, M. Kristan, A. Leonardis, J. Matas, M. Felsberg, R. Pflugfelder, J.K. Ka ̈m ̈ara ̈inen, H. J. Chang, M. Danelljan, L. ˇC. Zajc, A. Lukezˇiˇc et al. [[`paper`]](https://link.springer.com/chapter/10.1007/978-3-031-25085-9_25) [[`Dataset`🌟]](https://votchallenge.net/vot2022/dataset.html)
+
+* [**ICCV'2023**] **"The first visual object tracking segmentation vots2023 challenge results"**, M. Kristan, J. Matas, M. Danelljan, M. Felsberg, H. J. Chang, L. ˇC. Zajc, A. Lukeˇziˇc, O. Drbohlav, Z. Zhang, K.-T. Tran et al. [[`paper`]](https://ieeexplore.ieee.org/document/10350713) [[`Dataset`🌟]](https://votchallenge.net/vot2023/dataset.html)
+
+##### `Large-scall Datasets for Data-centric Research`
+
+* [**CVPR'2009**] **"Imagenet: A large-scale hierarchical image database"**, J. Deng, W. Dong, R. Socher, L.-J. Li, K. Li, and L. Fei-Fei. [[`paper`]](https://ieeexplore.ieee.org/document/5206848) [[`Dataset`🌟]](https://image-net.org/)
+
+* [**ACM'1995**] **"Wordnet: a lexical database for english"**, G. A. Miller. [[`paper`]](https://dl.acm.org/doi/pdf/10.1145/219717.219748) [[`Dataset`🌟]](https://wordnet.princeton.edu/)
+
+* [**ECCV'2014**] **"Microsoft coco: Common objects in context"**, T.-Y. Lin, M. Maire, S. Belongie, J. Hays, P. Perona, D. Ramanan, P. Dolla ́r, and C. L. Zitnick. [[`paper`]](https://arxiv.org/pdf/1405.0312) [[`Dataset`🌟]](https://cocodataset.org/)
+
+* [**CVPR'2019**] **"Lvis: A dataset for large vocabulary instance segmentation"**, A. Gupta, P. Dollar, and R. Girshick. [[`paper`]](https://ieeexplore.ieee.org/document/8954457) [[`Dataset`🌟]](https://www.lvisdataset.org/)
+
+* [**IJCV'2015**] **"Imagenet large scale visual recognition challenge"**, O. Russakovsky, J. Deng, H. Su, J. Krause, S. Satheesh, S. Ma, Z. Huang, A. Karpathy, A. Khosla, M. Bernstein et al. [[`paper`]](https://link.springer.com/article/10.1007/s11263-015-0816-y) [[`Dataset`🌟]](https://image-net.org/index.php)
+
+* [**CVPR'2017**] **"Youtubeboundingboxes: A large high-precision human-annotated data set for object detection in video"**, E. Real, J. Shlens, S. Mazzocchi, X. Pan, and V. Vanhoucke. [[`paper`]](https://arxiv.org/abs/1702.00824) [[`Dataset`🌟]](https://github.com/mbuckler/youtube-bb)
+
+* [**ECCV'2018**] **"Trackingnet: A large-scale dataset and benchmark for object tracking in the wild"**, M. Muller, A. Bibi, S. Giancola, S. Alsubaihi, and B. Ghanem. [[`paper`]](https://arxiv.org/abs/1803.10794) [[`Dataset`🌟]](https://paperswithcode.com/dataset/trackingnet)
+
+* [**TPAMI'2021**] **"Got-10k: A large high-diversity benchmark for generic object tracking in the wild"**, L. Huang, X. Zhao, and K. Huang. [[`paper`]](https://ieeexplore.ieee.org/document/8922619) [[`Dataset`🌟]](http://got-10k.aitestunion.com)
+
+* [**ECCV'2018**] **"Long-term tracking in the wild: A benchmark"**, J. Valmadre, L. Bertinetto, J. F. Henriques, R. Tao, A. Vedaldi, A. W. Smeulders, P. H. Torr, and E. Gavves. [[`paper`]](https://arxiv.org/abs/1803.09502) [[`Dataset`🌟]](https://oxuva.github.io/long-term-tracking-benchmark/)
+
+* [**CVPR'2019**] **"Lasot: A high-quality benchmark for large-scale single object tracking"**, H. Fan, L. Lin, F. Yang, P. Chu, G. Deng, S. Yu, H. Bai, Y. Xu, C. Liao, and H. Ling. [[`paper`]](https://arxiv.org/abs/2009.03465) [[`Dataset`🌟]](https://cis.temple.edu/lasot/)
+
+* [**TPAMI'2023**] **"Global Instance Tracking: Locating Target More Like Humans"**, S. Hu, X. Zhao, L. Huang, and K. Huang. [[`paper`]](https://ieeexplore.ieee.org/document/9720246) [[`Dataset`🌟]](http://videocube.aitestunion.com/)
+
+##### `Specialized Scenario Datasets`
+
+* [**CVPR'2012**] **"Are we ready for autonomous driving? The KITTI vision benchmark suite"**, A. Geiger, P. Lenz, and R. Urtasun. [[`paper`]](https://ieeexplore.ieee.org/document/6248074) [[`Dataset`🌟]](https://www.cvlibs.net/datasets/kitti/)
+
+* [**CVPR'2020**] **"Bdd100k: A diverse driving dataset for heterogeneous multitask learning"**, F. Yu, H. Chen, X. Wang, W. Xian, Y. Chen, F. Liu, V. Madhavan, and T. Darrell. [[`paper`]](https://arxiv.org/abs/1805.04687) [[`Dataset`🌟]](https://doc.bdd100k.com/download.html)
+
+* [**TPAMI'2016**] **"Nus-pro: A new visual tracking challenge"**, A. Li, M. Lin, Y. Wu, M.-H. Yang, and S. Yan. [[`paper`]](https://ieeexplore.ieee.org/document/7072555) [[`Dataset`🌟]](https://irip.buaa.edu.cn/anli/buaa)
+
+* [**ICCV'2021**] **"Transparent object tracking benchmark"**,  H. Fan, H. A. Miththanthaya, S. R. Rajan, X. Liu, Z. Zou, Y. Lin, H. Ling et al. [[`paper`]](https://arxiv.org/abs/2011.10875) [[`Dataset`🌟]](https://hengfan2010.github.io/projects/TOTB/)
+
+* [**AAAI'2017**] **"Visual object tracking for unmanned aerial vehicles: A benchmark and new motion models"**, S. Li and D.-Y. Yeung. [[`paper`]](https://ojs.aaai.org/index.php/AAAI/article/view/11205) [[`Dataset`🌟]](https://github.com/flyers/drone-tracking)
+
+* [**IJCV'2020**] **"The unmanned aerial vehicle benchmark: Object detection, tracking and baseline"**, H. Yu, G. Li, W. Zhang, Q. Huang, D. Du, Q. Tian, and N. Sebe. [[`paper`]](https://arxiv.org/abs/1804.00518) [[`Dataset`🌟]](https://sites.google.com/site/daviddo0323/projects/uavdt)
+
+* [**IJCV'2024**] **"Biodrone: A bionic drone-based single object tracking benchmark for robust vision"**,  X. Zhao, S. Hu, Y. Wang, J. Zhang, Y. Hu, R. Liu, H. Ling, Y. Li, R. Li, K. Liu, and J. Li. [[`paper`]](https://link.springer.com/article/10.1007/s11263-023-01937-0) [[`Dataset`🌟]](http://biodrone.aitestunion.com/)
+
+##### `Datasets in The Era of Large Models`
+
+* [**IJCV'2017**] **"Visual genome: Connecting language and vision using crowdsourced dense image annotations"**, R. Krishna, Y. Zhu, O. Groth, J. Johnson, K. Hata, J. Kravitz, S. Chen, Y. Kalantidis, L.-J. Li, D. A. Shamma et al. [[`paper`]](https://arxiv.org/abs/1602.07332) [[`Dataset`🌟]](https://homes.cs.washington.edu/~ranjay/visualgenome/api.html)
+
+* [**NeurIPS'2023**] **"Datacomp: In search of the next generation of multimodal datasets"**,S. Y. Gadre, G. Ilharco, A. Fang, J. Hayase, G. Smyrnis, T. Nguyen, R. Marten, M. Wortsman, D. Ghosh, J. Zhang et al. [[`paper`]](https://arxiv.org/abs/2304.14108) [[`Dataset`🌟]](https://www.datacomp.ai/)
+
+* [**NeurIPS'2022**] **"Laion-5b: An open large-scale dataset for training next generation image-text models"**,  C. Schuhmann, R. Beaumont, R. Vencu, C. Gordon, R. Wightman, M. Cherti, T. Coombes, A. Katta, C. Mullis, M. Wortsman et al. [[`paper`]](https://arxiv.org/abs/2210.08402) [[`Dataset`🌟]](https://laion.ai/)
+
+* [**CVPR'2022**] **"Grit: General robust image task benchmark"**, T. Gupta, R. Marten, A. Kembhavi, and D. Hoiem. [[`paper`]](https://arxiv.org/abs/2204.13653) [[`Dataset`🌟]](https://aka.ms/kosmos-2/)
+
+#### `Evaluation System`
+
+##### `Classification and Recognition`
+**无
+##### `Detection`
+
+* [**CVPR'2019**] **"Generalized intersection over union: A metric and a loss for bounding box regression"**, H. Rezatofighi, N. Tsoi, J. Gwak, A. Sadeghian, I. Reid, and S. Savarese. [[`paper`]](https://ieeexplore.ieee.org/document/8953982)
+
+* [**AAAI'2020**] **"Distance-iou loss: Faster and better learning for bounding box regression"**,  Z. Zheng, P. Wang, W. Liu, J. Li, R. Ye, and D. Ren. [[`paper`]](https://ojs.aaai.org/index.php/AAAI/article/view/6999)
+
+* [**ECCV'2014**] **"Microsoft coco: Common objects in context"**, T.-Y. Lin, M. Maire, S. Belongie, J. Hays, P. Perona, D. Ramanan, P. Dolla ́r, and C. L. Zitnick. [[`paper`]](https://link.springer.com/chapter/10.1007/978-3-319-10602-1_48) [[`Dataset`🌟]](https://cocodataset.org/)
+
+##### `Segmentation`
+
+* [**CVPR'2019**] **"Panoptic segmentation"**, A. Kirillov, K. He, R. Girshick, C. Rother, and P. Doll ́ar. [[`paper`]](https://arxiv.org/abs/1801.00868)
+
+##### `Tracking`
+
+* [**CVPR'2013**] **"Online object tracking: A benchmark"**, Y. Wu, J. Lim, and M.-H. Yang. [[`paper`]](https://ieeexplore.ieee.org/document/6619156) [[`Dataset`🌟]](http://cvlab.hanyang.ac.kr/tracker_benchmark/datasets.html)
+
+* [**TPAMI'2021**] **"Got-10k: A large high-diversity benchmark for generic object tracking in the wild"**, L. Huang, X. Zhao, and K. Huang. [[`paper`]](https://ieeexplore.ieee.org/document/8922619) [[`Dataset`🌟]](http://got-10k.aitestunion.com)
+
+* [**CVPR'2019**] **"Lasot: A high-quality benchmark for large-scale single object tracking"**, H. Fan, L. Lin, F. Yang, P. Chu, G. Deng, S. Yu, H. Bai, Y. Xu, C. Liao, and H. Ling. [[`paper`]](https://arxiv.org/abs/2009.03465) [[`Dataset`🌟]](https://cis.temple.edu/lasot/)
+
+* [**TPAMI'2015**] **"Object tracking benchmark"**, Y. Wu, J. Lim, and M.-H. Yang. [[`paper`]](https://ieeexplore.ieee.org/document/7001050) [[`Dataset`🌟]](http://cvlab.hanyang.ac.kr/tracker_benchmark/datasets.html)
+
+* [**CVPR'2013**] **"Online object tracking: A benchmark"**, Y. Wu, J. Lim, and M.-H. Yang. [[`paper`]](https://ieeexplore.ieee.org/document/6619156) [[`Dataset`🌟]](http://cvlab.hanyang.ac.kr/tracker_benchmark/datasets.html)
+
+* [**ICCV'2015**] **"The visual object tracking vot2015 challenge results"**, M. Kristan, J. Matas, A. Leonardis, M. Felsberg, L. Cehovin, G. Fernandez, T. Vojir, G. Hager, G. Nebehay, R. Pflugfelder, A. Gupta, A. Bibi, A. Lukezic, A. Garcia-Martin, A. Saffari, A. Petrosino, and A. Solis Montero. [[`paper`]]https://ieeexplore.ieee.org/document/7406428) [[`Dataset`🌟]](https://votchallenge.net/vot2015/dataset.html)
+
+* [**IJCV'2024**] **"Sotverse: A user-defined task space of single object tracking"**,S. Hu, X. Zhao, and K. Huang. [[`paper`]](https://arxiv.org/abs/2204.07414)
+
+##### `Evaluations in The Era of Large Models`
+
+* [**ECCV'2024**] **"Mmbench: Is your multi-modal model an all-around player?"**, Z. Y. Liu Yuan, Duan Haodong and L. Dahua. [[`paper`]](https://arxiv.org/abs/2307.06281)
+
+* [**arXiV'2023**] **"Gpt-4 technical report"**,  J. Achiam, S. Adler, S. Agarwal, L. Ahmad, I. Akkaya, F. L. Aleman, D. Almeida, J. Altenschmidt, S. Altman, S. Anadkat et al. [[`paper`]](https://arxiv.org/abs/2303.08774)
+
+* [**CVPR'2019**] **"Generalized intersection over union: A metric and a loss for bounding box regression"**, H. Rezatofighi, N. Tsoi, J. Gwak, A. Sadeghian, I. Reid, and S. Savarese. [[`paper`]](https://ieeexplore.ieee.org/document/8953982) [[`Dataset`🌟]](https://www.cs.toronto.edu/~kriz/cifar.html)
+
+#### `Summary and Outlook`
+
+##### `Visual Capability`
+
+* [**Nature'2015**] **"Deep learning"**, Y. LeCun, Y. Bengio, and G. Hinton. [[`paper`]](https://www.nature.com/articles/nature14539)
+
+* [**ACM'2009**] **"Imagenet classification with deep convolutional neural networks"**, A. Krizhevsky, I. Sutskever, and G. E. Hinton. [[`paper`]](https://dl.acm.org/doi/10.1145/3065386)
+
+* [**ICLR'2021**] **"An image is worth 16x16 words: Transformers for image recognition at scale"**, A. Dosovitskiy. [[`paper`]](https://arxiv.org/abs/2010.11929)
+
+* [**NeurIPS'2009**] **"Attention is all you need"**, A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, Ł. Kaiser, and I. Polosukhin. [[`paper`]](https://arxiv.org/abs/1706.03762)
+
+* [**ECCV'2016**] **"Fully-convolutional siamese networks for object tracking"**, L. Bertinetto, J. Valmadre, J. F. Henriques, A. Vedaldi, and P. H. Torr. [[`paper`]](https://arxiv.org/abs/1606.09549)
+
+* [**ECCV'2016**] **"Learning to track at 100 fps with deep regression networks"**,  D. Held, S. Thrun, and S. Savarese. [[`paper`]](https://arxiv.org/abs/1604.01802)
+
+* [**CVPR'2019**] **"Atom: Accurate tracking by overlap maximization"**,  M. Danelljan, G. Bhat, F. S. Khan, and M. Felsberg. [[`paper`]](https://ieeexplore.ieee.org/document/8953466)
+
+* [**ICCV'2019**] **"Learning discriminative model prediction for tracking"**,G. Bhat, M. Danelljan, L. V. Gool, and R. Timofte. [[`paper`]](https://arxiv.org/abs/1904.07220)
+
+* [**NeurIPS'2023**] **"A multi-modal global instance tracking benchmark (mgit): Better locating target in complex spatio-temporal and causal relationship"**, S. Hu, D. Zhang, M. Wu, X. Feng, X. Li, X. Zhao, and K. Huang. [[`paper`]](https://papers.nips.cc/paper_files/paper/2023/file/4ea14e6090343523ddcd5d3ca449695f-Paper-Datasets_and_Benchmarks.pdf)
+
+* [**BBS'2017**] **"Building machines that learn and think like people"**, B. M. Lake, T. D. Ullman, J. B. Tenenbaum, and S. J. Gershman. [[`paper`]](https://arxiv.org/abs/1604.00289)
+
+##### `Proxy Task`
+
+* [**CVPR'2024**] **"Visual language tracking with multi-modal interaction: A robust benchmark"**, X. Li, S. Hu, X. Feng, D. Zhang, M. Wu, J. Zhang, and K. Huang. [[`paper`]](https://arxiv.org/abs/2409.08887)
+
+* [**CVPR'2022**] **"Grit: General robust image task benchmark"**, T. Gupta, R. Marten, A. Kembhavi, and D. Hoiem. [[`paper`]](https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf)
+
+* [**CVPR'2021**] **"Next-qa: Next phase of question-answering to explaining temporal actions"**,  J. Xiao, X. Shang, A. Yao, and T.-S. Chua. [[`paper`]](https://arxiv.org/abs/2105.08276)
+
+##### `Data Environment`
+
+* [**IEEE'1998**] ***"Gradient-based learning applied to document recognition"***, Y. LeCun, L. Bottou, Y. Bengio, and P. Haffner.[[`paper`]](https://ieeexplore.ieee.org/document/726791)
+
+* [**TR'2009**] ***"Learning multiple layers of features from tiny images"***, A Krizhevsky，G. Hinton. [[`paper`]](https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf) [[`Dataset`🌟]](https://www.cs.toronto.edu/~kriz/cifar.html)
+
+* [**CVPR'2009**] ***"Imagenet: A large-scale hierarchical image database"***, J. Deng, W. Dong, R. Socher, L.-J. Li, K. Li, and L. Fei-Fei. [[`paper`]](https://ieeexplore.ieee.org/document/5206848) [[`Dataset`🌟]](https://image-net.org/)
+
+* [**CVPR'2024**] **"Dtllm-vlt: Diverse text generation for visual language tracking based on llm"**, X. Li, X. Feng, S. Hu, M. Wu, D. Zhang, J. Zhang, and K. Huang. [[`paper`]](https://arxiv.org/abs/2405.12139)
+
+* [**arXiV'2024**] **"Dtvlt: A multi-modal diverse text benchmark for visual language tracking based on llm"**, A Krizhevsky，G. Hinton. [[`paper`]](https://arxiv.org/abs/2410.02492)
+
+* [**CVPR'2022**] **"Ego4d: Around the world in 3,000 hours of egocentric video"**, K. Grauman, A. Westbury, E. Byrne, Z. Chavis, A. Furnari, R. Girdhar, J. Hamburger, H. Jiang, M. Liu, X. Liu et al. [[`paper`]](https://arxiv.org/abs/2110.07058)
+
+* [**CVPR'2018**] **"Gibson env: Real-world perception for embodied agents"**, F. Xia, A. R. Zamir, Z. He, A. Sax, J. Malik, and S. Savarese. [[`paper`]](https://arxiv.org/abs/1808.10654)
+
+* [**CVPR'2019**] **"Gqa: A new dataset for realworld visual reasoning and compositional question answering"**,  D. A. Hudson and C. D. Manning. [[`paper`]](https://arxiv.org/abs/1902.09506)
+
+* [**arXiV'2017**] **"Ai2-thor: An interactive 3d environment for visual ai"**, E. Kolve, R. Mottaghi, W. Han, E. VanderBilt, L. Weihs, A. Herrasti, M. Deitke, K. Ehsani, D. Gordon, Y. Zhu et al. [[`paper`]](https://arxiv.org/abs/1712.05474)
+
+##### `Evaluation System`
+
+* [**arxiv'2017**] **"Ai2-thor: An interactive 3d environment for visual ai"**, E. Kolve, R. Mottaghi, W. Han, E. VanderBilt, L. Weihs, A. Herrasti, M. Deitke, K. Ehsani, D. Gordon, Y. Zhu et al. [[`paper`]](https://arxiv.org/abs/1712.05474)
+
+* [**NeurIPS'2024**] **"Beyond accuracy: Tracking more like human via visual search"**, D. Zhang, S. Hu, X. Feng, X. Li, M. Wu, J. Zhang, and K. Huang. [[`paper`]](https://proceedings.neurips.cc/paper_files/paper/2024/hash/050f8591be3874b52fdac4e1060eeb29-Abstract-Conference.html)
+
+* [**CVPR'2018**] **"Embodied question answering"**, A. Das, S. Datta, G. Gkioxari, S. Lee, D. Parikh, and D. Batra. [[`paper`]](https://arxiv.org/abs/1711.11543)
+
+##### `Evaluation Models`
+
+* [**NeurIPS'2024**] **"MemVLT: Vision-language tracking with adaptive memory-based prompts"**, X. Feng, X. Li, S. Hu, D. Zhang, M. Wu, J. Zhang, X. Chen, and K. Huang. [[`paper`]](https://openreview.net/forum?id=ZK1CZXKgG5)
+
+* [**arXiv'2023**] **"Track anything: Segment anything meets videos"**,J. Yang, M. Gao, Z. Li, S. Gao, F. Wang, and F. Zheng. [[`paper`]](https://arxiv.org/abs/2304.11968)
+
+* [**NeurIPS'2022**] **"Flamingo: a visual language model for few-shot learning"**,  J.-B. Alayrac, J. Donahue, P. Luc, A. Miech, I. Barr, Y. Hasson, K. Lenc, A. Mensch, K. Millican, M. Reynolds et al. [[`paper`]](https://arxiv.org/abs/2204.14198)
+
+* [**ECCV'2022**] **"Towards grand unification of object tracking"**,  B. Yan, Y. Jiang, P. Sun, D. Wang, Z. Yuan, P. Luo, and H. Lu. [[`paper`]](https://arxiv.org/abs/2207.07078)
+
+
+
+
+
+
+6
+
+
+
 Evaluation Models - Analyzing The Subject Of Evaluation
 
 1.*Classifcation and Recognition*

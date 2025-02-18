@@ -1,5 +1,5 @@
 # Awesome-Evaluation-Perspective-CV
-* * *
+
 This repository is designed to collect excellent CV work and explores the evolution of computer vision from an evaluation perspective. The goal is to provide a platform for researchers (e.g., informal reviews) to keep track of recently published and previous literature in the community. Divided into five sections: Visual Capabilities, Agent Tasks, Data Environment, Evaluation Systems, and Test Executors, the survey provides a systematic analysis of how the evaluation approach has shaped the development of vision algorithms.
 
 
